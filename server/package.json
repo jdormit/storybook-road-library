@@ -1,0 +1,21 @@
+{
+  "name": "storybook_road_server",
+  "version": "1.0.0",
+  "description": "A server for Storybook Road. https://www.github.com/jdormit/storybook-road-library.git",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^1.4.5",
+    "mongodb": "^2.1.4",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/jdormit/storybook-road-library.git"
+  },
+  "author": "Jeremy Dormitzer (jeremy.dormitzer@gmail.com)",
+  "license": "ISC"
+}

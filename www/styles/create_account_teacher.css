@@ -1,0 +1,83 @@
+body {
+	text-align: center;
+	font-family: Century Gothic, sans-serif;
+	display: flex;
+}
+
+#create_form {
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin:auto;
+	margin-top: 8%;
+	border: solid;
+	border-radius: 20px;
+}
+
+input[type=text] {
+	font-size: 20px;
+}
+
+input[type=password] {
+	font-size: 20px;
+}
+
+input[type='submit'] {
+	width:40%;
+	height: 40px;
+	font-size: 20px;
+}
+
+button {
+	width: 40%;
+	height: 40px;
+	font-size: 20px;
+}
+
+#footer {
+	display:flex;
+	padding: 15px;
+	justify-content: space-around;
+}
+
+#username_password_input {
+	border-bottom: solid;
+	padding: 10px;
+}
+
+#header {
+	display: flex;
+	border-bottom: solid;
+	padding: 10px;
+}
+
+#contact_input {
+	border-bottom: solid;
+	padding: 10px;
+}
+
+#statement_box {
+	padding: 10px;
+	border-bottom: solid;
+}
+
+#statement {
+	height: 128px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+#prof_pic {
+	height: 128px;
+	width: 128px;
+	margin-left: auto;
+}

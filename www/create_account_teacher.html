@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create Account</title>
+		<link rel='stylesheet' href='./styles/create_account_teacher.css'>
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+		<script type='text/javascript' src='./scripts/create_account_teacher.js'></script>
+	</head>
+	<body>
+		<form id='create_form'>
+			<div id='header'>
+				<h1 id='header_text'>New Account</h1>
+				<img src='./assets/profile-photo-placeholder.jpg' id='prof_pic' alt='placeholder image' class='right'>
+			</div>
+			<div id='username_password_input'>
+				First Name: <input type='text' name='fname' id='fname' placeholder='Jane' class='right' required>
+				<br>
+				Last Name: <input type='text' name='lname' id='lname' placeholder='Doe' class='right' required>
+				<br>
+				Password: <input type='password' name='password' id='password' placeholder='*********' class='right' required>
+				<br>
+				Confirm Password: <input type='password' name='confirm_password' id='confirm_password' placeholder='*********' class='right' required>
+				<br>
+			</div>
+			<div id='contact_input'>
+				Email Address: <input type='text' name='email' id='email' placeholder='email@example.com' class='right' required>
+				<br>
+				Phone Number: <input type='text' name='phone_num' id='phone_num' placeholder='(###)-###-####' class='right' required>
+				<br>
+				School: <input type='text' name='school' id='school' placeholder='School Name' class='right' required>
+				<br>
+			</div>
+			<div id='statement_box'>
+				Personal Statement:
+				<br>
+				<textarea id='statement'></textarea>
+				<br>
+			</div>
+			<div id='footer'>
+				<input type='submit' name='create_account' id='create_account' value='Create Account'>
+				<button type='button' id='cancel'>Cancel</button>
+			</div>
+		</form>
+	</body>
+</html>
