@@ -2,6 +2,8 @@ var url='http://localhost:8080';
 var socket = io.connect(url);
 
 $(document).ready(function() {
+	$('#phone_num').mask('(999)-999-9999');
+	
 	function form_acceptable() {
 		if ($('#password').val() != $('#confirm_password').val()) {
 			console.log("Passwords don't match!");
@@ -12,10 +14,9 @@ $(document).ready(function() {
 		return true;
 	}
 
-	
 	$('#create_form').submit(function(event) {
+		event.preventDefault();
 		if ($('#password').val() != $('#confirm_password').val()) {
-			event.preventDefault();
 			console.log("Passwords don't match!");
 			$('#confirm_password').val("");
 			$('#confirm_password').attr("placeholder", "Password must match!");
@@ -32,6 +33,7 @@ $(document).ready(function() {
 				'type':'teacher'
 			};
 			socket.emit('create_account_teacher', account_info);
+			window.location.href = './index.html';
 		}
 	});
 });

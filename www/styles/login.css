@@ -27,6 +27,48 @@ h2 {
 	text-align: center;
 }
 
+.type_div {
+	display: flex;
+	margin: auto;
+}
+
+#account_type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-style:solid;
+	border-radius: 20px;
+	border-width: 5px;
+	border-color: #142BCC;
+	background-color: #5C40FF;
+	margin: auto;
+	width: 350px;
+}
+
+#type_buttons {
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+#type_text {
+	align-self: flex-start;
+}
+
+.type_button {
+	width: 40%;
+	border: none;
+	height: 45px;
+	font-size: 24px;
+}
+
+.type_button:hover {
+	border: solid;
+	border-color: #FF170E;
+}
+
 input {
 	border-radius: 5px;
 	display:block;
@@ -35,13 +77,11 @@ input {
 }
 
 .login_input {
-	color: transparent;
 	padding-left: 5px;
 	border: solid;
 	border-color: #FF5629;
 	height: 35px;
 	font-size: 20px;
-	text-shadow: 0 0 0 black;
 }
 
 .login_input:focus {

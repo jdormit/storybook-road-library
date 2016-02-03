@@ -4,8 +4,8 @@
 		<title>Storybook Road</title>
 		<link rel='stylesheet' type='text/css' href='./styles/login.css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script type='text/javascript' src='https://cdn.socket.io/socket.io-1.0.0.js'</script>
-		<script type='text/javascript' src='./scripts/login.js'></script>
+		<script type='text/javascript' src='https://cdn.socket.io/socket.io-1.0.0.js'></script>
+		<script type='text/javascript' src='.\scripts\login.js'></script>
 	</head>
 	<body>
 		<div id='title'>
@@ -14,14 +14,23 @@
 		<div id='login'>
 			<form id='login_form'>
 				<h2>Login</h2>
-				<input type='text' name='email' id='email' placeholder='Email Address' class='login_input' autocomplete='off'>
+				<input type='text' name='email' id='email' placeholder='Email Address' class='login_input'>
 				<br>
 				<input type='password' name='password' id='password' placeholder='Password' class='login_input' autocomplete='off'>
 				<br>
 				<input type='submit' name='login' id='login_button' value='Login' class='login_input_button'>
 				<br>
-				<button type='button' class='login_input_button'>Create New Account</button>
+				<button type='button' id='create_account_button' class='login_input_button'>Create New Account</button>
 			</form>
+			<div id='account_type' class='type_div'>
+				<div id='account_text' class='type_div'>
+					<h3>Account Type:</h3>
+				</div>
+				<div id='type_buttons' class='type_div'>
+					<button type='button' class='type_button' id='student'>Student</button>
+					<button type='button' class='type_button' id='teacher'>Teacher</button>
+				</div>
+			</div>
 		</div>
 		<div id='nav_bar'>
 			<ul>
